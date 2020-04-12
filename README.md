@@ -10,6 +10,8 @@
 # raspberryData widget
 Widget for Übersicht `http://tracesof.net/uebersicht/` to display data of your Raspberry
 
+![banner.png](img/banner.png?raw=true "raspberryData widget")
+
 ---
 
 ## Features
