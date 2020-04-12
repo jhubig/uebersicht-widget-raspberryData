@@ -81,8 +81,6 @@ pos_left	= '330px'`
 ## Version History
 - `1.0` - Initial Release (TBC)
 
----
 Raspberry Pi" and/or the Raspberry logo is a/are registered trademark(s) of the Raspberry Pi Foundation
----
 
 © 2020 | Johannes Hubig
