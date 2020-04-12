@@ -19,7 +19,7 @@ Currently the following data is collected from your Raspberry Pi
 | Name | Command
 | --- | --- |
 | Device Model | `cat /sys/firmware/devicetree/base/model` |
-| OS Release Name | `cat /etc/os-release | grep "PRETTY_NAME" | awk -F"=" '{print $2}' | sed 's/"//g'` |
+| OS Release Name | `cat /etc/os-release | grep \"PRETTY_NAME\" | awk -F\"=\" '{print $2}' | sed 's/\"//g'` |
 | kernelVersion | `uname -r` |
 | IP Address | `hostname -I | awk '{print $1}'` |
 | Uptime | `uptime -p` |
