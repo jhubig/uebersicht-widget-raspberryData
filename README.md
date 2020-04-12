@@ -19,21 +19,21 @@ Currently the following data is collected from your Raspberry Pi
 | Name | Command
 | --- | --- |
 | Device Model | `cat /sys/firmware/devicetree/base/model` |
-| OS Release Name | `cat /etc/os-release  \| grep \"PRETTY_NAME\" \| awk -F\"=\" '{print $2}' \| sed 's/\"//g'` |
+| OS Release Name | `cat /etc/os-release  \| grep "PRETTY_NAME" \| awk -F"=" '{print $2}' \| sed 's/"//g'` |
 | kernelVersion | `uname -r` |
-| IP Address | `hostname -I | awk '{print $1}'` |
+| IP Address | `hostname -I \| awk '{print $1}'` |
 | Uptime | `uptime -p` |
-| CPU Model | `cat /proc/cpuinfo | grep "model name" | awk -F":" '{print $2}'` |
-| CPU Type | `cat /proc/cpuinfo | grep "Hardware" | awk -F":" '{print $2}' | tr -d " "` |
-| CPU Revision | `cat /proc/cpuinfo | grep "Revision" | awk -F":" '{print $2}' | tr -d " "` |
-| CPU Temperature | `/opt/vc/bin/vcgencmd measure_temp | tr -d "temp=" | tr -d "'C"` |
-| Running processes | `/bin/ls -d /proc/[0-9]* | wc -l'` |
-| Memory usage (Total) | `free -m -t | grep 'Mem' | awk '{print $2}'` |
-| Memory usage (Free) | `free -m -t | grep 'Mem' | awk '{print $3}'` |
-| Disk usage | `df -hP | grep root | tr -s " " " " | sed 's/G//g' | sed 's/%//g'` |
+| CPU Model | `cat /proc/cpuinfo \| grep "model name" \| awk -F":" '{print $2}'` |
+| CPU Type | `cat /proc/cpuinfo \| grep "Hardware" \| awk -F":" '{print $2}' \| tr -d " "` |
+| CPU Revision | `cat /proc/cpuinfo \| grep "Revision" \| awk -F":" '{print $2}' \| tr -d " "` |
+| CPU Temperature | `/opt/vc/bin/vcgencmd measure_temp \| tr -d "temp=" \| tr -d "'C"` |
+| Running processes | `/bin/ls -d /proc/[0-9]* \| wc -l'` |
+| Memory usage (Total) | `free -m -t \| grep 'Mem' \| awk '{print $2}'` |
+| Memory usage (Free) | `free -m -t \| grep 'Mem' \| awk '{print $3}'` |
+| Disk usage | `df -hP \| grep root \| tr -s " " " " \| sed 's/G//g' \| sed 's/%//g'` |
 
 **Becoma a part of it**   
-Do you have any ideas to improve or extend the existing functionality? Feel free to raise an issue or create a pull request. Thanks
+Do you have any ideas to improve or extend the existing functionality? Feel free to raise an issue or create a pull request. Thanks.
 
 
 ## Setup
@@ -42,8 +42,8 @@ Do you have any ideas to improve or extend the existing functionality? Feel free
 
 First of all you need to enter your username and hostname of your Raspberry Pi in the getData.sh file:
 
-`# Configuration
-username='your username'
+`# Configuration\
+username='your username'\
 hostname='ip address or hostname of raspberry'`
 
 ### 2. Create ssh keys for passwordless access
@@ -70,8 +70,8 @@ Now once for copying the file, the password needs to be entered. After logging i
 If steps 1 and 2 were successful, then you should see already data of your Raspberry Pi on your widget on the desktop. Enjoy :)
 Now you can change the position of the widget in the index.coffee file:
 
-`# Position of the widget on your screen
-pos_top		= '180px'
+`# Position of the widget on your screen\
+pos_top		= '180px'\
 pos_left	= '330px'`
 
 ----
