@@ -48,6 +48,13 @@ First of all you need to enter your username and hostname of your Raspberry Pi i
 # Configuration\
 username='your username'\
 hostname='ip address or hostname of raspberry'
+```
+
+Afterwards you need to make the file executable:
+Open a terminal and go to the widget folder (usually located under /Users/<yourUser/Library/Application Support/Übersicht/widgets/raspberryData.widget/). Then apply the following:
+
+```shell
+chmod 755 raspberryData.sh
 ``` 
 
 ### 2. Create ssh keys for passwordless access
