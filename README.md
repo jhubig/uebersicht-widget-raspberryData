@@ -44,9 +44,11 @@ Do you have any ideas to improve or extend the existing functionality? Feel free
 
 First of all you need to enter your username and hostname of your Raspberry Pi in the getData.sh file:
 
-`# Configuration\
+```shell
+# Configuration\
 username='your username'\
-hostname='ip address or hostname of raspberry'`
+hostname='ip address or hostname of raspberry'
+``` 
 
 ### 2. Create ssh keys for passwordless access
 
@@ -56,14 +58,18 @@ After that to be able to get the data out of your Raspberry Pi without the need 
 
 Now start the generation of the keys:
 
-`ssh-keygen`
+```shell
+ssh-keygen
+```
 
 - [x] Save the keys in the file /Users/<yourUser>/.ssh/id_rsa when prompted - should be the default location
 - [x] Enter NO passphrase (just press two times ENTER when prompted)
 
 Then copy the keys to your Raspberry Pi:
 
-`ssh-copy-id <USERNAME>@<IP-ADDRESS>`
+```shell
+ssh-copy-id <USERNAME>@<IP-ADDRESS>
+```
 
 Now once for copying the file, the password needs to be entered. After logging in the next time on your Raspberry PI through ssh, no password is needed anymore.
 
@@ -72,15 +78,19 @@ Now once for copying the file, the password needs to be entered. After logging i
 If steps 1 and 2 were successful, then you should see already data of your Raspberry Pi on your widget on the desktop. Enjoy :)
 Now you can change the position of the widget in the index.coffee file:
 
-`# Position of the widget on your screen\
+```shell
+# Position of the widget on your screen\
 pos_top		= '180px'\
-pos_left	= '330px'`
+pos_left	= '330px'
+```
 
 ----
 
 ## Version History
 - `1.0` - Initial Release (TBC)
 
-Raspberry Pi" and/or the Raspberry logo is a/are registered trademark(s) of the Raspberry Pi Foundation
+----
+
+The "Raspberry Pi" and the Raspberry logo are registered trademark(s) of the Raspberry Pi Foundation: https://www.raspberrypi.org/
 
 © 2020 | Johannes Hubig
