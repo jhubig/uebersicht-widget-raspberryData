@@ -10,6 +10,10 @@
 # raspberryData widget
 Widget for Übersicht http://tracesof.net/uebersicht/ to display data of your Raspberry
 
+----
+## Version History
+- 20200413: `1.0` - Initial Release
+----
 ![banner.png](img/banner.png?raw=true "raspberryData widget")
 
 ---
@@ -90,11 +94,6 @@ Now you can change the position of the widget in the index.coffee file:
 pos_top		= '180px'\
 pos_left	= '330px'
 ```
-
-----
-
-## Version History
-- `1.0` - Initial Release (TBC)
 
 ----
 
