@@ -8,7 +8,7 @@
 [![Github All Releases](https://img.shields.io/github/watchers/jhubig/raspberryData?style=social)](https://github.com/jhubig/raspberryData/watchers)
 
 # raspberryData widget
-Widget for Übersicht `http://tracesof.net/uebersicht/` to display data of your Raspberry
+Widget for Übersicht http://tracesof.net/uebersicht/ to display data of your Raspberry
 
 ![banner.png](img/banner.png?raw=true "raspberryData widget")
 
