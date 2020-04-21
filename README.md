@@ -40,24 +40,7 @@ Do you have any ideas to improve or extend the existing functionality? Feel free
 
 ## Setup
 
-### 1. getData.sh file for config
-
-First of all you need to enter your username and hostname of your Raspberry Pi in the getData.sh file:
-
-```shell
-# Configuration\
-username='your username'\
-hostname='ip address or hostname of raspberry'
-```
-
-Afterwards you need to make the file executable:
-Open a terminal and go to the widget folder (usually located under /Users/<yourUser/Library/Application Support/Übersicht/widgets/raspberryData.widget/). Then apply the following:
-
-```shell
-chmod 755 raspberryData.sh
-``` 
-
-### 2. Create ssh keys for passwordless access
+### 1. Create ssh keys for passwordless access
 
 First prerequisite is, that you have enabled ssh on your Raspberry Pi. You can find instructions here: https://www.raspberrypi.org/documentation/remote-access/ssh/
 
@@ -79,6 +62,23 @@ ssh-copy-id <USERNAME>@<IP-ADDRESS>
 ```
 
 Now once for copying the file, the password needs to be entered. After logging in the next time on your Raspberry PI through ssh, no password is needed anymore.
+
+### 2. getData.sh file for config
+
+First of all you need to enter your username and hostname of your Raspberry Pi in the getData.sh file:
+
+```shell
+# Configuration\
+username='your username'\
+hostname='ip address or hostname of raspberry'
+```
+
+Afterwards you need to make the file executable:
+Open a terminal and go to the widget folder (usually located under /Users/<yourUser/Library/Application Support/Übersicht/widgets/raspberryData.widget/). Then apply the following:
+
+```shell
+chmod 755 raspberryData.sh
+``` 
 
 ### 3. Start the engines
 
