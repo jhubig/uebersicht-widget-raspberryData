@@ -36,7 +36,7 @@ else
   barColor    = '#777777'
   bkground		= 'rgba(#000, 0.5)'
 
-command: "raspberryData.widget/raspberryData.sh 2>/dev/null"
+command: "raspberryData.widget/getData.sh 2>/dev/null"
 
 # Update every 60 seconds
 refreshFrequency: 60000
