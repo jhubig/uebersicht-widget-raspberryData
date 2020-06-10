@@ -81,7 +81,7 @@ Afterwards you need to make the file executable:
 Open a terminal and go to the widget folder (usually located under /Users/<yourUser/Library/Application Support/Übersicht/widgets/raspberryData.widget/). Then apply the following:
 
 ```shell
-chmod 755 raspberryData.sh
+chmod 755 getData.sh
 ``` 
 
 ### 3. Start the engines
