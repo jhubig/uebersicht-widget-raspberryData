@@ -82,6 +82,10 @@ style: """
     color: #{dataColor}
     text-shadow: 2px 2px 5px #000
 
+  .raspData tbody
+    display: table
+    width: 100%
+
   td.description
     text-align: left
 
