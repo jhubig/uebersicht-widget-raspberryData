@@ -82,7 +82,7 @@ Open a terminal and go to the widget folder (usually located under /Users/<yourU
 
 ```shell
 chmod 755 getData.sh
-``` 
+```
 
 ### 3. Start the engines
 
